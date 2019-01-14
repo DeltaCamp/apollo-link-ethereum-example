@@ -2,6 +2,8 @@
 
 This app demonstrates the use of [apollo-link-ethereum](https://github.com/DeltaCamp/apollo-link-ethereum)
 
+[Live here](https://sharp-noether-f25189.netlify.com/) (not much to see though ;)
+
 # Setup
 
 ```
