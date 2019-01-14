@@ -7,12 +7,10 @@ import get from 'lodash.get'
 
 const NETWORK_STATUS = gql`
   query Stuff($address: String!) {
-    status: networkStatus @client {
-      isConnected
-    },
-    CoordinationGame @contract(address: $address) {
-      usdWeiPerEther
-      weiPerApplication
+    MKR @contract(address: $address) {
+      totalSupply
+      someonesBalance: balanceOf(address: "0x36Aff91ffc31C18d291bAe4204FF22621360641D")
+      allEvents @pastEvents(fromBlock: "4620855", toBlock: "4621855")
     }
   }
 `
@@ -23,7 +21,7 @@ class App extends Component {
     return (
       <Query
         query={NETWORK_STATUS}
-        variables={ { address: "0x11e694fb9aaf50fb55409610e72d7f14244f38bd" } }>
+        variables={ { address: "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2" } }>
 
         {({ data }) => {
           return (
@@ -37,9 +35,11 @@ class App extends Component {
                   Edit <code>src/App.js</code> and save to reload.
                 </p>
                 <p>
-                  <i>{(get(data, 'CoordinationGame.usdWeiPerEther') || '').toString()}</i>
-                  <hr />
-                  <i>{(get(data, 'CoordinationGame.weiPerApplication') || '').toString()}</i>
+                  <i>Random person's balance: {(get(data, 'MKR.someonesBalance') || '').toString()}</i>
+                  <br />
+                  <i>Total supply: {(get(data, 'MKR.totalSupply') || '').toString()}</i>
+                  <br />
+                  <i>Number of events: {(get(data, 'MKR.allEvents') || []).length}</i>
                 </p>
                 <a
                   className="App-link"

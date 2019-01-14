@@ -2,8 +2,8 @@ import { ApolloClient } from 'apollo-client'
 import { ApolloLink } from 'apollo-link'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import { withClientState } from 'apollo-link-state'
-import { ContractLink } from 'apollo-link-web3'
-import { Web3JSResolver } from 'apollo-link-web3-resolver-web3js'
+import { ContractLink } from 'apollo-link-ethereum'
+import { Web3JSResolver } from 'apollo-link-ethereum-resolver-web3js'
 import { abiMapping } from './abiMapping'
 import Web3 from 'web3'
 
@@ -39,4 +39,5 @@ window.ethereum.enable().then(function () {
   console.log('Set web3')
   web3Resolver.web3 = new Web3(window.ethereum)
   apolloClient.resetStore()
+  console.log('reset store')
 })

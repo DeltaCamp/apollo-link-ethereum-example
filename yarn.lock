@@ -1264,6 +1264,21 @@ apollo-link-dedup@^1.0.0:
   dependencies:
     apollo-link "^1.2.6"
 
+apollo-link-ethereum-resolver-web3js@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/apollo-link-ethereum-resolver-web3js/-/apollo-link-ethereum-resolver-web3js-0.0.2.tgz#d35a86fb023f00d36d3901d7d914d6ecf40872e5"
+  integrity sha512-2JRm8jpdSwciGBZNGqL75Y8RJkbHj/b4hfeRH8ZVQ8CnRKdIC8Kjjh96pkw4TdNc/hq0rs/VbYaG6C+E4nlHkw==
+
+apollo-link-ethereum@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/apollo-link-ethereum/-/apollo-link-ethereum-0.0.2.tgz#b7f97526ddab42c08f257a8b6d7c54e889ced81e"
+  integrity sha512-1CAnQvB4UQvyIHejelDRzm09dTPozcj5ZCjyl3Ww1P1zBS7uCd9/Pn3yPUnEd+5DBc9BPf1Qd91oUcXO+HTTNg==
+  dependencies:
+    apollo-link "^1.2.6"
+    apollo-utilities "^1.0.27"
+    debug "^4.1.1"
+    graphql-anywhere "^4.1.24"
+
 apollo-link-http-common@^0.2.8:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/apollo-link-http-common/-/apollo-link-http-common-0.2.8.tgz#c6deedfc2739db8b11013c3c2d2ccd657152941f"
@@ -3005,7 +3020,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debug@^4.1.0:
+debug@^4.1.0, debug@^4.1.1:
   version "4.1.1"
   resolved "https://registry.yarnpkg.com/debug/-/debug-4.1.1.tgz#3b72260255109c6b589cee050f1d516139664791"
   integrity sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
@@ -4606,7 +4621,7 @@ graceful-fs@^4.1.10, graceful-fs@^4.1.11, graceful-fs@^4.1.15, graceful-fs@^4.1.
   resolved "https://registry.yarnpkg.com/graceful-readlink/-/graceful-readlink-1.0.1.tgz#4cafad76bc62f02fa039b2f94e9a3dd3a391a725"
   integrity sha1-TK+tdrxi8C+gObL5Tpo906ORpyU=
 
-graphql-anywhere@^4.1.0-alpha.0:
+graphql-anywhere@^4.1.0-alpha.0, graphql-anywhere@^4.1.24:
   version "4.1.24"
   resolved "https://registry.yarnpkg.com/graphql-anywhere/-/graphql-anywhere-4.1.24.tgz#59e2a8bfd3d00ac75f6a377e31e4e9fdaa5ce786"
   integrity sha512-g81K7FqXSF3q1iqFWlwiwD+g0SDkPUUa9+Wa+7BOrAe5+7R4BdNWL4dw9BRsJxt0Xx6nOaI2E+VM7QMAucQFvA==
@@ -6433,6 +6448,11 @@ lodash.get@^4.4.2:
   version "4.4.2"
   resolved "https://registry.yarnpkg.com/lodash.get/-/lodash.get-4.4.2.tgz#2d177f652fa31e939b4438d5341499dfa3825e99"
   integrity sha1-LRd/ZS+jHpObRDjVNBSZ36OCXpk=
+
+lodash.has@^4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/lodash.has/-/lodash.has-4.5.2.tgz#d19f4dc1095058cccbe2b0cdf4ee0fe4aa37c862"
+  integrity sha1-0Z9NwQlQWMzL4rDN9O4P5Ko3yGI=
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
