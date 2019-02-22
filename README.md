@@ -18,4 +18,4 @@ Start the [Create React App](https://github.com/facebook/create-react-app) dev s
 $ yarn start
 ```
 
-Now navigate to http://localhost:3000 in your browser and make sure MetaMask is on **mainnet**.
+Now navigate to http://localhost:3000 in your browser.  The app is hard-coded to mainnet, so MetaMask will not affect the output.
