@@ -5,8 +5,8 @@
   "dependencies": {
     "apollo-cache-inmemory": "^1.3.12",
     "apollo-client": "^2.4.8",
-    "apollo-link-ethereum": "0.0.25",
-    "apollo-link-ethereum-resolver-ethersjs": "0.0.25",
+    "apollo-link-ethereum": "0.0.26",
+    "apollo-link-ethereum-resolver-ethersjs": "0.0.26",
     "apollo-link-http": "^1.5.9",
     "apollo-link-state": "^0.4.2",
     "ethers": "^4.0.26",
