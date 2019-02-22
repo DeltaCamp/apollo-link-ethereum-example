@@ -20,7 +20,6 @@ class App extends Component {
     return (
       <Query query={MKR_QUERY}>
         {({ data, loading, error }) => {
-          console.log(data, loading, error)
           return (
             <div className="App">
               <header className="App-header">
